@@ -1,0 +1,367 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px; 
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1;
+  }
+
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 230px;
+    width: auto; 
+  }
+  
+  .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding-right: 30px;
+    display: flex;
+  }
+  
+  .navigation li {
+    margin-right: 30px; 
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: black; 
+    font-size: 16px; 
+    font-weight: 500;
+  }
+  
+  .top-section{
+    display: flex;
+    align-items: center;
+    background-color: #080EA9;
+    max-height: 800px;
+    padding: 30px;
+    padding-top: 40px;
+  }
+  
+  .website-title-section{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-top: 50px;
+    padding-left: 40px;
+    align-items: flex-start;
+    margin-right: 50px;
+  }
+
+  .website-title-section h1{
+    color: #ffffff;
+    font-size: 36px;
+    margin: 0;
+  }
+
+  .website-title-section p{
+    color: #33CCCB;
+    font-size: 18px;
+  }
+
+  button{
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 14px 20px 14px 20px;
+    background-image: linear-gradient(to right,#0101ab,#6363f1);
+    border:0;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.website-description-section{
+  display: flex;
+  align-items: center;
+  padding-top:70px;
+  padding-left:30px;
+  padding-right:20px;
+  padding-bottom: 50px;
+}
+
+.website-description{
+  width: 48%;
+  margin-left: 0;
+}
+
+.website-description p{
+  color: #736a8e;
+  font-size: 18px;
+}
+
+.website-description li:before{
+  content: '';
+  position: inherit;
+  left: 0;
+  top: 0;
+  width: 24px; /* Adjust the width and height of the tick box image */
+  height: 24px;
+  background-image: ('/insu-assignment/public/images/tickmark.png');
+  background-size: cover;
+}
+
+.laptop-img{
+  width: 52%;
+}
+
+.laptop-img img{
+  height: 378px;
+  width: auto;
+}
+
+.company-description{
+  background-color: #1414c0;
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 350px;
+}
+
+.company-description h1{
+  font-size: 46px;
+  margin-top: 0;
+}
+
+.company-description p{
+  text-align: center;
+  max-width: 840px;
+}
+
+@keyframes colorChange {
+  0% { background-position: 0% 50%; } /* Starting position - left */
+  100% { background-position: 100% 50%; } /* Ending position - right */
+}
+
+@keyframes iconColorChange {
+  0% { color: #b50018; }
+  100% { color: #0000aa; }
+}
+
+.color-transition {
+  background: linear-gradient(to right, #1977d6, #ffff1a); 
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text; 
+  color: transparent;
+  animation: colorChange 1s linear infinite; 
+}
+
+.blue-red{
+  background:linear-gradient(to right,#b50018,#0000aa);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text; 
+  color: transparent;
+  animation: colorChange 1s linear infinite,iconColorChange 1s linear infinite; 
+}
+
+.services-cards{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card-1{
+  border:none;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px;
+  background-color: #4d4dff;
+  max-width: 350px;
+  max-height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  padding-bottom: 70px;
+}
+
+.service-card-1 p{
+  margin-top: 0;
+  text-align: left;
+}
+
+.service-card{
+  background-color: #f3f5ff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: black;
+  border-radius:10px;
+  border-bottom: 4px solid #b0bdff;
+  margin-right: 20px;
+  max-width: 270px;
+  max-height: 150px;
+}
+
+.service-card p{
+  margin-top: 0;
+}
+
+.service-card img{
+  width:120px;
+  height: 90px;
+}
+
+.why-webingo-section{
+  background-color: #1414c0;
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:550px;
+}
+
+.features-cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.features-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  color: black;
+  width:330px;
+  height: 160px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.features-card img{
+  width: auto;
+  height: 60px;
+  margin-right: 5px;
+}
+
+.features-card div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  margin-top: 0;
+  margin-left:5px;
+}
+
+.features-card div h4{
+  margin-top: 0;
+  width:120px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.features-card div p{
+  margin-top: 0;
+}
+
+.normal{
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.start-a-project{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.build-something-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.build-something-section h1{
+  margin-top: 0;
+  width:650px;
+}
+
+.estimate-btn{
+  background-color: transparent;
+  font-weight: bold;
+  background-color: none;
+}
+
+.call-us-now{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.call-us-now button{
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stay-with-us-section{
+  display: flex;
+  background-color: #e6e6e6;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+
+.stay-with-us-section h1{
+  color: #050748;
+}
+
+.stay-with-us-section p{
+  color:#7e6a8e;
+}
+
+.email-input{
+  border-radius: 20px;
+  padding: 16px;
+  border: none;
+  width: 300px;
+}
+
+.email-input-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-input-btn button{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}

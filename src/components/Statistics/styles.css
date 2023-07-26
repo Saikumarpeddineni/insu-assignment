@@ -1,0 +1,28 @@
+.statistics-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0e0eb9;
+    padding: 30px;
+}
+
+.statistic{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.statistic img{
+    width: auto;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px 40px 10px 40px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.statistic h3{
+    font-size: 36px;
+    margin-bottom: 0;
+}

@@ -1,0 +1,60 @@
+.key-expertise-areas-container{
+    background-image: url("https://img.freepik.com/free-vector/worldwide-connection-gray-background-illustration-vector_53876-61772.jpg?w=2000");
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.key-expertise-areas-container h1{
+    color: #050748;
+    font-size: 46px;
+    margin-top: 0;
+}
+
+.key-expertise-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.expertise-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    border-radius: 10px;
+    padding: 20px 50px 20px 50px;
+    width:450px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.expertise-card img{
+    width: auto;
+    height: 160px;
+    margin-left: 20px;
+}
+
+.expertise-card h3{
+    width:70%;
+}
+
+.exp-1{
+    background-color: #4169e1;
+}
+
+.exp-2{
+    background-color: #ee4466;
+}
+
+.exp-3{
+    background-color: #ed792c;
+}
+
+.exp-4{
+    background-color: #8f35e3;
+}

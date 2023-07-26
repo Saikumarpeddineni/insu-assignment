@@ -1,0 +1,22 @@
+.featured-on-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.featured-on-title{
+    border: 3px solid #646464;
+    padding: 40px;
+    color: #050748;
+}
+
+.featured-on-title h1{
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.featured-on-section img{
+    width: auto;
+    height: 200px;
+}
